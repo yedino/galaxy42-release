@@ -1,0 +1,5 @@
+
+This release was not proper: it was not fully deterministic,
+because the build date (yyyy/mm/dd) was added by NSIS builder
+to the windows .exe.
+
