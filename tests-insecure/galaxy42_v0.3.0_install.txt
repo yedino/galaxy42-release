@@ -1,0 +1,31 @@
+
+The files: matching "galaxy42_v0.3.0_*" that are builded, 
+are builded from source code version:
+git commit: 9ee9c65b9ab33b0f8a21e41e634e030b0296ba0d.
+
+See http://yedino.pl ; http://github.com/yedino/
+
+### Release notes
+
+### Version v0.3.0
+
+* For users of official binary distribution:
+  * Connections seem encrypted, but are not yet authenticated correctly.
+  * You can not crossbuild / Gitian build for Mac OS X target, therefore we do not provide official Macintosh version yet. (bug#278)
+* For people building from source
+  * (Same remarks as for users)
+  * On Windows, building with MSVC compiler, the messages/languages will not work even if you provide .mo files correctly. (bug#J332)
+  * On Windows, you can try to build the .mo language files as in [doc/translation-instructions-cygwin.txt](doc/translation-instructions-cygwin.txt), or copy the .mo files from other platforms
+
+Older release notes are in [Changelog.md](Changelog.md).
+
+=== Using pre-built binary ===
+
+On windows: get the installer .exe, run it.
+The Program files/galaxy42/tunserver.elf.exe
+
+Program will be installed as service and will run on boot.
++ disable the service. Run the installed .exe manually. It will work and you can specify --peer option ... as well as see own IP.
+
+On macosx: currently not supporting this untill we resolve bug#J278
+
